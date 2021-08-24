@@ -1,0 +1,136 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Fresh.Pages.ExplorePage" >
+    <ContentPage.Content>
+        <StackLayout>
+            
+    <Grid RowSpacing="20" Margin="30,0,0,0" HorizontalOptions="FillAndExpand" VerticalOptions="Start">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                </Grid.RowDefinitions>
+                <Label Text="Explore Products" Margin="5" TextColor="DarkSlateGray" FontSize="20"/>
+                <ScrollView Orientation="Horizontal" Grid.Row="1" VerticalOptions="Start" VerticalScrollBarVisibility="Never" HorizontalScrollBarVisibility="Never">
+                    <StackLayout BindableLayout.ItemsSource="{Binding Explore}" Orientation="Horizontal" Spacing="20" VerticalOptions="Start">
+                        <BindableLayout.ItemTemplate>
+                            <DataTemplate>
+                                <StackLayout VerticalOptions="Start">
+                                    <Frame Padding="0" HasShadow="False"  HorizontalOptions="Start" VerticalOptions="Start" CornerRadius="10" HeightRequest="100" WidthRequest="100">
+                                        <Image Source="{Binding Image}" Aspect="AspectFit" HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand"/>
+                                    </Frame>
+                                    <Label Text="{Binding Name}" TextColor="Black" FontSize="15" />
+                                    <Label Text="{Binding Price}" Margin="0,-7,0,0" TextColor="#62153B" FontSize="12"/>
+                                </StackLayout>
+                            </DataTemplate>
+                        </BindableLayout.ItemTemplate>
+                    </StackLayout>
+                </ScrollView>
+            </Grid>
+
+            <BoxView BackgroundColor="AliceBlue" HeightRequest="1" WidthRequest="200"/>
+            <StackLayout  BackgroundColor="AliceBlue" Margin="0,10" HeightRequest="70">
+                <Label Text="Categories" TextColor="Gray" FontSize="20" VerticalOptions="CenterAndExpand" HorizontalOptions="CenterAndExpand"/>
+            </StackLayout>
+        
+            <ScrollView>
+                <StackLayout Orientation="Vertical" Spacing="17" Margin="10">
+                    <StackLayout Orientation="Horizontal">
+                        <Image Source="FruitsVegs" HorizontalOptions="StartAndExpand" VerticalOptions="CenterAndExpand" HeightRequest="30" WidthRequest="30"/>
+                        <Label Text="Fruits And Vegetables" TextColor="Gray" FontAttributes="Bold" FontSize="15" VerticalTextAlignment="Center" HorizontalOptions="CenterAndExpand" />
+                        <Image Source="arrow" VerticalOptions="CenterAndExpand" HorizontalOptions="EndAndExpand" HeightRequest="20" WidthRequest="20"/>
+                    </StackLayout>
+                    <StackLayout>
+                        <BoxView BackgroundColor="Gray" HeightRequest="1"/>
+                    </StackLayout>
+                    <StackLayout Orientation="Horizontal">
+                        <Image Source="Cereal" HorizontalOptions="StartAndExpand" VerticalOptions="CenterAndExpand" HeightRequest="30" WidthRequest="30"/>
+                        <Label Text="Cereals" TextColor="Gray" FontSize="15" VerticalTextAlignment="Center" HorizontalOptions="CenterAndExpand" FontAttributes="Bold"/>
+                        <Image Source="arrow" VerticalOptions="CenterAndExpand" HorizontalOptions="EndAndExpand" HeightRequest="20" WidthRequest="20"/>
+                    </StackLayout>
+                    <StackLayout>
+                        <BoxView BackgroundColor="Gray" HeightRequest="1"/>
+                    </StackLayout>
+                    <StackLayout Orientation="Horizontal">
+                        <Image Source="Kitchen" HorizontalOptions="StartAndExpand" VerticalOptions="CenterAndExpand" HeightRequest="30" WidthRequest="30"/>
+                        <Label Text="Kitchen" TextColor="Gray" FontSize="15" VerticalTextAlignment="Center" HorizontalOptions="CenterAndExpand" FontAttributes="Bold"/>
+                        <Image Source="arrow" VerticalOptions="CenterAndExpand" HorizontalOptions="EndAndExpand" HeightRequest="20" WidthRequest="20"/>
+                    </StackLayout>
+                    <StackLayout>
+                        <BoxView BackgroundColor="Gray" HeightRequest="1"/>
+                    </StackLayout>
+                    <StackLayout Orientation="Horizontal">
+                        <Image Source="Beverages" HorizontalOptions="StartAndExpand" VerticalOptions="CenterAndExpand" HeightRequest="30" WidthRequest="30"/>
+                        <Label Text="Beverages" TextColor="Gray" FontSize="15" VerticalTextAlignment="Center" HorizontalOptions="CenterAndExpand" FontAttributes="Bold"/>
+                        <Image Source="arrow" VerticalOptions="CenterAndExpand" HorizontalOptions="EndAndExpand" HeightRequest="20" WidthRequest="20"/>
+                    </StackLayout>
+                    <StackLayout>
+                        <BoxView BackgroundColor="Gray" HeightRequest="1"/>
+                    </StackLayout>
+                    <StackLayout Orientation="Horizontal">
+                        <Image Source="Beauty" HorizontalOptions="StartAndExpand" VerticalOptions="CenterAndExpand" HeightRequest="30" WidthRequest="30"/>
+                        <Label Text="Beauty And Hygiene" TextColor="Gray" FontSize="15" VerticalTextAlignment="Center" HorizontalOptions="CenterAndExpand" FontAttributes="Bold"/>
+                        <Image Source="arrow" VerticalOptions="CenterAndExpand" HorizontalOptions="EndAndExpand" HeightRequest="20" WidthRequest="20"/>
+                    </StackLayout>
+                    <StackLayout>
+                        <BoxView BackgroundColor="Gray" HeightRequest="1"/>
+                    </StackLayout>
+                    <StackLayout Orientation="Horizontal">
+                        <Image Source="SnacksCPage" HorizontalOptions="StartAndExpand" VerticalOptions="CenterAndExpand" HeightRequest="30" WidthRequest="30"/>
+                        <Label Text="Snacks" TextColor="Gray" FontSize="15" VerticalTextAlignment="Center" HorizontalOptions="CenterAndExpand" FontAttributes="Bold"/>
+                        <Image Source="arrow" VerticalOptions="CenterAndExpand" HorizontalOptions="EndAndExpand" HeightRequest="20" WidthRequest="20"/>
+                    </StackLayout>
+                    <StackLayout>
+                        <BoxView BackgroundColor="Gray" HeightRequest="1"/>
+                    </StackLayout>
+                    <StackLayout Orientation="Horizontal">
+                        <Image Source="Bakery" HorizontalOptions="StartAndExpand" VerticalOptions="CenterAndExpand" HeightRequest="30" WidthRequest="30"/>
+                        <Label Text="Bakery And Dairy" TextColor="Gray" FontSize="15" VerticalTextAlignment="Center" HorizontalOptions="CenterAndExpand" FontAttributes="Bold"/>
+                        <Image Source="arrow" VerticalOptions="CenterAndExpand" HorizontalOptions="EndAndExpand" HeightRequest="20" WidthRequest="20"/>
+                    </StackLayout>
+
+                    <StackLayout>
+                        <BoxView BackgroundColor="Gray" HeightRequest="1"/>
+                    </StackLayout>
+                    <StackLayout Orientation="Horizontal">
+                        <Image Source="Cleaning" HorizontalOptions="StartAndExpand" VerticalOptions="CenterAndExpand" HeightRequest="30" WidthRequest="30"/>
+                        <Label Text="Cleaning And Household" TextColor="Gray" FontSize="15" VerticalTextAlignment="Center" HorizontalOptions="CenterAndExpand" FontAttributes="Bold"/>
+                        <Image Source="arrow" VerticalOptions="CenterAndExpand" HorizontalOptions="EndAndExpand" HeightRequest="20" WidthRequest="20"/>
+                    </StackLayout>
+
+                    <StackLayout>
+                        <BoxView BackgroundColor="Gray" HeightRequest="1"/>
+                    </StackLayout>
+                    <StackLayout Orientation="Horizontal">
+                        <Image Source="Grains" HorizontalOptions="StartAndExpand" VerticalOptions="CenterAndExpand" HeightRequest="30" WidthRequest="30"/>
+                        <Label Text="Foodgrains,Oil And Masala" TextColor="Gray" FontSize="15" VerticalTextAlignment="Center" HorizontalOptions="CenterAndExpand" FontAttributes="Bold"/>
+                        <Image Source="arrow" VerticalOptions="CenterAndExpand" HorizontalOptions="EndAndExpand" HeightRequest="20" WidthRequest="20"/>
+                    </StackLayout>
+
+                    <StackLayout>
+                        <BoxView BackgroundColor="Gray" HeightRequest="1"/>
+                    </StackLayout>
+                    <StackLayout Orientation="Horizontal">
+                        <Image Source="Pets" HorizontalOptions="StartAndExpand" VerticalOptions="CenterAndExpand" HeightRequest="30" WidthRequest="30"/>
+                        <Label Text="Pets" TextColor="Gray" FontSize="15" VerticalTextAlignment="Center" HorizontalOptions="CenterAndExpand" FontAttributes="Bold"/>
+                        <Image Source="arrow" VerticalOptions="CenterAndExpand" HorizontalOptions="EndAndExpand" HeightRequest="20" WidthRequest="20"/>
+                    </StackLayout>
+
+                    <StackLayout>
+                        <BoxView BackgroundColor="Gray" HeightRequest="1"/>
+                    </StackLayout>
+                    <StackLayout Orientation="Horizontal">
+                        <Image Source="Garden" HorizontalOptions="StartAndExpand" VerticalOptions="CenterAndExpand" HeightRequest="30" WidthRequest="30"/>
+                        <Label Text="Garden" TextColor="Gray" FontSize="15" VerticalTextAlignment="Center" HorizontalOptions="CenterAndExpand" FontAttributes="Bold"/>
+                        <Image Source="arrow" VerticalOptions="CenterAndExpand" HorizontalOptions="EndAndExpand" HeightRequest="20" WidthRequest="20"/>
+                    </StackLayout>
+                    <StackLayout>
+                        <BoxView BackgroundColor="Transparent" HeightRequest="1"/>
+                    </StackLayout>
+                </StackLayout>
+            </ScrollView>
+        </StackLayout>
+
+    </ContentPage.Content>
+
+</ContentPage>

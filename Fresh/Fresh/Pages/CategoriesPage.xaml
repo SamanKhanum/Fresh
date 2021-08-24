@@ -1,0 +1,104 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Fresh.Pages.CategoriesPage" Title="Shop By Category">
+    <ContentPage.Content>
+        <ScrollView Orientation="Vertical">
+            <StackLayout Orientation="Vertical" Spacing="25" Margin="10">
+                <StackLayout Orientation="Horizontal">
+                    <Image Source="FruitsVegs" HorizontalOptions="StartAndExpand" VerticalOptions="CenterAndExpand" HeightRequest="30" WidthRequest="30"/>
+                    <Label Text="Fruits And Vegetables" TextColor="Gray" FontAttributes="Bold" FontSize="15" VerticalTextAlignment="Center" HorizontalOptions="CenterAndExpand" />
+                    <Image Source="arrow" VerticalOptions="CenterAndExpand" HorizontalOptions="EndAndExpand" HeightRequest="20" WidthRequest="20"/>
+                </StackLayout>
+                <StackLayout>
+                    <BoxView BackgroundColor="Gray" HeightRequest="1"/>
+                </StackLayout>
+                <StackLayout Orientation="Horizontal">
+                    <Image Source="Cereal" HorizontalOptions="StartAndExpand" VerticalOptions="CenterAndExpand" HeightRequest="30" WidthRequest="30"/>
+                    <Label Text="Cereals" TextColor="Gray" FontSize="15" VerticalTextAlignment="Center" HorizontalOptions="CenterAndExpand" FontAttributes="Bold"/>
+                    <Image Source="arrow" VerticalOptions="CenterAndExpand" HorizontalOptions="EndAndExpand" HeightRequest="20" WidthRequest="20"/>
+                </StackLayout>
+                <StackLayout>
+                    <BoxView BackgroundColor="Gray" HeightRequest="1"/>
+                </StackLayout>
+                <StackLayout Orientation="Horizontal">
+                    <Image Source="Kitchen" HorizontalOptions="StartAndExpand" VerticalOptions="CenterAndExpand" HeightRequest="30" WidthRequest="30"/>
+                    <Label Text="Kitchen" TextColor="Gray" FontSize="15" VerticalTextAlignment="Center" HorizontalOptions="CenterAndExpand" FontAttributes="Bold"/>
+                    <Image Source="arrow" VerticalOptions="CenterAndExpand" HorizontalOptions="EndAndExpand" HeightRequest="20" WidthRequest="20"/>
+                </StackLayout>
+                <StackLayout>
+                    <BoxView BackgroundColor="Gray" HeightRequest="1"/>
+                </StackLayout>
+                <StackLayout Orientation="Horizontal">
+                    <Image Source="Beverages" HorizontalOptions="StartAndExpand" VerticalOptions="CenterAndExpand" HeightRequest="30" WidthRequest="30"/>
+                    <Label Text="Beverages" TextColor="Gray" FontSize="15" VerticalTextAlignment="Center" HorizontalOptions="CenterAndExpand" FontAttributes="Bold"/>
+                    <Image Source="arrow" VerticalOptions="CenterAndExpand" HorizontalOptions="EndAndExpand" HeightRequest="20" WidthRequest="20"/>
+                </StackLayout>
+                <StackLayout>
+                    <BoxView BackgroundColor="Gray" HeightRequest="1"/>
+                </StackLayout>
+                <StackLayout Orientation="Horizontal">
+                    <Image Source="Beauty" HorizontalOptions="StartAndExpand" VerticalOptions="CenterAndExpand" HeightRequest="30" WidthRequest="30"/>
+                    <Label Text="Beauty And Hygiene" TextColor="Gray" FontSize="15" VerticalTextAlignment="Center" HorizontalOptions="CenterAndExpand" FontAttributes="Bold"/>
+                    <Image Source="arrow" VerticalOptions="CenterAndExpand" HorizontalOptions="EndAndExpand" HeightRequest="20" WidthRequest="20"/>
+                </StackLayout>
+                <StackLayout>
+                    <BoxView BackgroundColor="Gray" HeightRequest="1"/>
+                </StackLayout>
+                <StackLayout Orientation="Horizontal">
+                    <Image Source="SnacksCPage" HorizontalOptions="StartAndExpand" VerticalOptions="CenterAndExpand" HeightRequest="30" WidthRequest="30"/>
+                    <Label Text="Snacks" TextColor="Gray" FontSize="15" VerticalTextAlignment="Center" HorizontalOptions="CenterAndExpand" FontAttributes="Bold"/>
+                    <Image Source="arrow" VerticalOptions="CenterAndExpand" HorizontalOptions="EndAndExpand" HeightRequest="20" WidthRequest="20"/>
+                </StackLayout>
+                <StackLayout>
+                    <BoxView BackgroundColor="Gray" HeightRequest="1"/>
+                </StackLayout>
+                <StackLayout Orientation="Horizontal">
+                    <Image Source="Bakery" HorizontalOptions="StartAndExpand" VerticalOptions="CenterAndExpand" HeightRequest="30" WidthRequest="30"/>
+                    <Label Text="Bakery And Dairy" TextColor="Gray" FontSize="15" VerticalTextAlignment="Center" HorizontalOptions="CenterAndExpand" FontAttributes="Bold"/>
+                    <Image Source="arrow" VerticalOptions="CenterAndExpand" HorizontalOptions="EndAndExpand" HeightRequest="20" WidthRequest="20"/>
+                </StackLayout>
+
+                <StackLayout>
+                    <BoxView BackgroundColor="Gray" HeightRequest="1"/>
+                </StackLayout>
+                <StackLayout Orientation="Horizontal">
+                    <Image Source="Cleaning" HorizontalOptions="StartAndExpand" VerticalOptions="CenterAndExpand" HeightRequest="30" WidthRequest="30"/>
+                    <Label Text="Cleaning And Household" TextColor="Gray" FontSize="15" VerticalTextAlignment="Center" HorizontalOptions="CenterAndExpand" FontAttributes="Bold"/>
+                    <Image Source="arrow" VerticalOptions="CenterAndExpand" HorizontalOptions="EndAndExpand" HeightRequest="20" WidthRequest="20"/>
+                </StackLayout>
+
+                <StackLayout>
+                    <BoxView BackgroundColor="Gray" HeightRequest="1"/>
+                </StackLayout>
+                <StackLayout Orientation="Horizontal">
+                    <Image Source="Grains" HorizontalOptions="StartAndExpand" VerticalOptions="CenterAndExpand" HeightRequest="30" WidthRequest="30"/>
+                    <Label Text="Foodgrains,Oil And Masala" TextColor="Gray" FontSize="15" VerticalTextAlignment="Center" HorizontalOptions="CenterAndExpand" FontAttributes="Bold"/>
+                    <Image Source="arrow" VerticalOptions="CenterAndExpand" HorizontalOptions="EndAndExpand" HeightRequest="20" WidthRequest="20"/>
+                </StackLayout>
+
+                <StackLayout>
+                    <BoxView BackgroundColor="Gray" HeightRequest="1"/>
+                </StackLayout>
+                <StackLayout Orientation="Horizontal">
+                    <Image Source="Pets" HorizontalOptions="StartAndExpand" VerticalOptions="CenterAndExpand" HeightRequest="30" WidthRequest="30"/>
+                    <Label Text="Pets" TextColor="Gray" FontSize="15" VerticalTextAlignment="Center" HorizontalOptions="CenterAndExpand" FontAttributes="Bold"/>
+                    <Image Source="arrow" VerticalOptions="CenterAndExpand" HorizontalOptions="EndAndExpand" HeightRequest="20" WidthRequest="20"/>
+                </StackLayout>
+
+                <StackLayout>
+                    <BoxView BackgroundColor="Gray" HeightRequest="1"/>
+                </StackLayout>
+                <StackLayout Orientation="Horizontal">
+                    <Image Source="Garden" HorizontalOptions="StartAndExpand" VerticalOptions="CenterAndExpand" HeightRequest="30" WidthRequest="30"/>
+                    <Label Text="Garden" TextColor="Gray" FontSize="15" VerticalTextAlignment="Center" HorizontalOptions="CenterAndExpand" FontAttributes="Bold"/>
+                    <Image Source="arrow" VerticalOptions="CenterAndExpand" HorizontalOptions="EndAndExpand" HeightRequest="20" WidthRequest="20"/>
+                </StackLayout>
+                <StackLayout>
+                    <BoxView BackgroundColor="Transparent" HeightRequest="1"/>
+                </StackLayout>
+            </StackLayout>
+        </ScrollView>
+    </ContentPage.Content>
+   
+</ContentPage>

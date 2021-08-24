@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Shell xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+       xmlns:Pages="clr-namespace:Fresh.Pages" xmlns:local="clr-namespace:Fresh"
+       xmlns:Controls="clr-namespace:Fresh.Controls"  x:Class="Fresh.ShellHome" >
+
+
+    <Shell.FlyoutHeader>
+        <local:HeaderContentView/>
+    </Shell.FlyoutHeader>
+
+    <FlyoutItem FlyoutDisplayOptions="AsMultipleItems" Title="Fresh" x:Name="colors">
+
+        <ShellContent Title="Home"  Route="HomePage" 
+                      Icon="homePage"
+                      ContentTemplate="{DataTemplate Pages:HomePage}" />
+
+        <ShellContent Title="Explore" Route="ExplorePage"
+                      Icon="Explore"
+                      ContentTemplate="{DataTemplate Pages:ExplorePage}"/>
+
+        <ShellContent Title="Categories" Route="CategoriesPage"
+                      Icon="Category"
+                      ContentTemplate="{DataTemplate Pages:CategoriesPage}"/>
+
+        <ShellContent Title="My Basket" Route="BasketPage"
+                      Icon="Basket1"
+                      ContentTemplate="{DataTemplate Pages:BasketPage}"/>
+
+        <ShellContent Title="My Account" Route="MyAccountPage"
+                  Icon="Account"
+                  ContentTemplate="{DataTemplate Pages:MyAccountPage}"/>
+
+    </FlyoutItem>
+
+
+    <Shell.FlyoutFooter>
+        <Controls:FooterContentView/>
+    </Shell.FlyoutFooter>
+
+</Shell>
+
+   
+  

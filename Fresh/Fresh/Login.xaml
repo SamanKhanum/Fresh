@@ -1,0 +1,86 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Fresh.Login" NavigationPage.HasNavigationBar="False">
+    <ContentPage.Content>
+        <StackLayout>
+            <StackLayout Padding="0" BackgroundColor="White">
+                <Grid>
+                    <StackLayout Padding="0" Margin="0">
+                        <Frame BackgroundColor="LightPink" HeightRequest="150" HorizontalOptions="FillAndExpand" Padding="0">
+                            <Image Source="GradientWallpaper" Aspect="AspectFill" Margin="0"/>
+                        </Frame>
+                    </StackLayout>
+                    <StackLayout Margin="15,110,15,0">
+                        <Frame BackgroundColor="White" HasShadow="True" HeightRequest="480" HorizontalOptions="FillAndExpand">
+                            <StackLayout>
+                                <StackLayout HorizontalOptions="CenterAndExpand">
+                                    <Label Text="SIGN IN" TextColor="Black" FontSize="Medium" FontAttributes="Bold"/>
+                                </StackLayout>
+
+                                <StackLayout Margin="0,25,0,0">
+                                    <Frame BackgroundColor="Transparent" BorderColor="DarkGray" Padding="0"  Margin="0" CornerRadius="50" HorizontalOptions="FillAndExpand">
+                                        <StackLayout Orientation="Horizontal">
+                                            <Frame BackgroundColor="AliceBlue" CornerRadius="50" HeightRequest="35" WidthRequest="35" Padding="0" HorizontalOptions="Start" Margin="7">
+                                                <Image Source="UserIcon" Aspect="AspectFit"/>
+                                            </Frame>
+                                            <Entry Placeholder="UserName" TextColor="Black" HorizontalOptions="FillAndExpand" Margin="0,0,15,0"/>
+
+                                        </StackLayout>
+                                    </Frame>
+                                    <Frame BackgroundColor="Transparent" BorderColor="DarkGray" Padding="0"  Margin="0,20,0,0" CornerRadius="50" HorizontalOptions="FillAndExpand">
+                                        <StackLayout Orientation="Horizontal">
+                                            <Frame BackgroundColor="AliceBlue" CornerRadius="50" HeightRequest="35" WidthRequest="35" Padding="0" HorizontalOptions="Start" Margin="7">
+                                                <Image Source="Password" Aspect="AspectFit"/>
+                                            </Frame>
+                                            <Entry Placeholder="Password" IsPassword="True" TextColor="Black" HorizontalOptions="FillAndExpand" Margin="0,0,15,0"/>
+
+
+                                        </StackLayout>
+                                    </Frame>
+
+                                </StackLayout>
+                                <StackLayout Orientation="Horizontal">
+
+                                    <CheckBox IsChecked="False" Color="HotPink"/>
+                                    <Label Text="Remember me" HorizontalTextAlignment="Start" VerticalTextAlignment="Center"/>
+                                    <Label Text="Forgot Password" HorizontalTextAlignment="End" TextColor="HotPink" HorizontalOptions="EndAndExpand" FontAttributes="Bold" VerticalTextAlignment="Center"/>
+
+                                </StackLayout>
+                                <Button Text="SIGN IN" Clicked="btn_Clicked"  Margin="0,10" BackgroundColor="Purple" TextColor="White" FontAttributes="Bold" CornerRadius="30"/>
+
+                                <StackLayout Orientation="Horizontal" HorizontalOptions="Center">
+                                    <Label Text="Create Account " HorizontalTextAlignment="Start" VerticalTextAlignment="Center" />
+                                    <Label Text="Sign Up" HorizontalTextAlignment="Center" TextColor="HotPink" FontAttributes="Bold" VerticalTextAlignment="Center"/>
+
+                                </StackLayout>
+                                <StackLayout>
+                                    <Grid>
+                                        <BoxView BackgroundColor="DarkGray" HeightRequest="1" Margin="50" HorizontalOptions="CenterAndExpand" WidthRequest="130"/>
+                                        <Frame BackgroundColor="White" WidthRequest="50" Padding="0" Margin="0" HeightRequest="50" CornerRadius="30" HasShadow="False" BorderColor="DarkGray" VerticalOptions="Center" HorizontalOptions="Center">
+                                            <Label Text="OR" TextColor="DarkGray" FontSize="Small" HorizontalTextAlignment="Center" FontAttributes="Bold"  VerticalTextAlignment="Center"/>
+                                        </Frame>
+                                    </Grid>
+
+                                    <StackLayout Orientation="Horizontal" HorizontalOptions="CenterAndExpand">
+
+                                        <Frame BackgroundColor="Transparent" WidthRequest="70" Padding="0" Margin="0" HeightRequest="70" CornerRadius="30" HasShadow="False">
+                                            <Image Source="Email" Aspect="AspectFit" Margin="0,0,25,0"/>
+                                        </Frame>
+                                        <Frame BackgroundColor="Transparent" WidthRequest="70" Padding="0" Margin="0" HeightRequest="70" CornerRadius="30" HasShadow="False" >
+                                            <Image Source="Google" Aspect="AspectFit" Margin="25,0,0,0"/>
+                                        </Frame>
+                                    </StackLayout>
+
+                                </StackLayout>
+                            </StackLayout>
+                        </Frame>
+                        <StackLayout Orientation="Horizontal">
+                            <Image Source="WomenShopping" HeightRequest="100" WidthRequest="100" BackgroundColor="Transparent"/>
+                        </StackLayout>
+                    </StackLayout>
+                </Grid>
+            </StackLayout>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Fresh.Pages.BasketPage" NavigationPage.HasNavigationBar="True" Title=" My Basket">
+    <StackLayout Orientation="Vertical">
+        <SearchBar Placeholder="Search" HorizontalOptions="CenterAndExpand" VerticalOptions="Center"/>
+        <Image Source="Basket.png" Aspect="AspectFit" BackgroundColor="Transparent" HeightRequest="120" WidthRequest="120" 
+               VerticalOptions="CenterAndExpand" HorizontalOptions="CenterAndExpand" Opacity="0.6"/>
+        <Label Text= " Your basket is empty "  TextColor="DarkSlateGray"  FontSize="22" FontAttributes="Bold" HorizontalOptions="Center" Opacity="0.7"/>
+        <Button Text=" START SHOPPING " Clicked="Basket_Clicked" Margin="10" BackgroundColor="Transparent" Padding="3" TextColor="Coral"  FontSize="19" FontAttributes="Bold" />
+    </StackLayout>
+       
+</ContentPage>

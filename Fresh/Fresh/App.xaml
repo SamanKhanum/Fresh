@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Application xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Fresh.App">
+    <Application.Resources>
+        <ResourceDictionary>
+            <Style TargetType="Shell" ApplyToDerivedTypes="True" x:Name="colors">
+                <Setter Property="Shell.TabBarDisabledColor" Value="Gray"/>
+                <Setter Property="Shell.TabBarBackgroundColor" Value="White"/>
+                <Setter Property="Shell.TabBarTitleColor" Value="#6BADCE"/>
+
+            </Style>
+        </ResourceDictionary>
+    </Application.Resources>
+</Application>
