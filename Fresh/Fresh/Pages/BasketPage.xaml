@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Fresh.Pages.BasketPage" >
+    <StackLayout Orientation="Horizontal" BackgroundColor="DarkOrange">
+        <Image Source="MenuIcon" VerticalOptions="CenterAndExpand" HorizontalOptions="StartAndExpand" BackgroundColor="Transparent"/>
+        <SearchBar HorizontalOptions="CenterAndExpand" VerticalOptions="StartAndExpand" Placeholder="Search..." PlaceholderColor="White"/>
+        <Image Source="Basket" VerticalOptions="StartAndExpand" HorizontalOptions="EndAndExpand" BackgroundColor="Transparent"/>
+    </StackLayout>
+       
+</ContentPage>

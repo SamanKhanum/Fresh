@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Application xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Fresh.App">
+    <Application.Resources>
+        <Style x:Name="BaseStyle"
+        TargetType="Shell">
+            <Setter Property="Shell.BackgroundColor"
+                    Value="Transparent" />
+            <Setter Property="Shell.ForegroundColor"
+                    Value="White" />
+            <Setter Property="Shell.TitleColor"
+                    Value="White" />
+            <Setter Property="Shell.DisabledColor"
+                    Value="DeepPink" />
+            <Setter Property="Shell.UnselectedColor"
+                    Value="AliceBlue" />
+        </Style>
+    </Application.Resources>
+</Application>

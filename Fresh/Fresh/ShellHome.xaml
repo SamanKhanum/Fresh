@@ -1,0 +1,61 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Shell xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+       xmlns:Pages="clr-namespace:Fresh.Pages" xmlns:local="clr-namespace:Fresh" xmlns:Controls="clr-namespace:Fresh.Controls"
+       x:Class="Fresh.ShellHome" NavigationPage.HasNavigationBar="True"
+                    BackgroundColor="Transparent"
+       ForegroundColor="Pink"
+       TitleColor="Orange"
+       DisabledColor="OrangeRed"
+       UnselectedColor="Gray">
+
+
+    <Shell.FlyoutHeader>
+        <local:HeaderContentView/>
+    </Shell.FlyoutHeader>
+
+    <FlyoutItem FlyoutDisplayOptions="AsMultipleItems" >
+
+        <ShellContent Title="Home" Icon="fav"
+                      ContentTemplate="{DataTemplate Pages:HomePage}" >
+
+
+        </ShellContent>
+
+        <!--<ShellContent Title="Home"
+                          Icon="fav"
+                          ContentTemplate="{DataTemplate Pages:HomePage}"/>
+
+        <ShellContent Title="Explore"
+                      Icon="fav"
+                      ContentTemplate="{DataTemplate Pages:ExplorePage}"/>
+
+        <ShellContent Title="Categories"
+                      Icon="fav"
+                      ContentTemplate="{DataTemplate Pages:CategoriesPage}"/>
+
+        <ShellContent Title="My Basket"
+                      Icon="fav"
+                      ContentTemplate="{DataTemplate Pages:BasketPage}"/>
+
+        <ShellContent Title="Settings"
+                      Icon="fav"
+                     ContentTemplate="{DataTemplate Pages:SettingsPage}"/>-->
+    </FlyoutItem>
+
+    <ShellContent Title="About"
+                  Icon="fav"
+                  ContentTemplate="{DataTemplate Pages:MyAccountPage}"/>
+
+    <Shell.FlyoutFooter>
+        <Controls:FooterContentView/>
+    </Shell.FlyoutFooter>
+
+</Shell>
+<!--<ContentPage>
+        <SearchBar HorizontalOptions="CenterAndExpand" VerticalOptions="StartAndExpand" Text="Search . . ." 
+                   BackgroundColor="Black" TextColor="White" />
+    </ContentPage>-->
+
+   
+  

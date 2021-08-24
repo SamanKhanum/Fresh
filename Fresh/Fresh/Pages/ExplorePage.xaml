@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Fresh.Pages.ExplorePage">
+    <ContentView HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand">
+        <ScrollView HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand">
+            <BindableLayout.ItemTemplate>
+                <DataTemplate>
+                    <Grid HorizontalOptions="FillAndExpand" VerticalOptions="Start" HeightRequest="270">
+                        <Image Source="{Binding Image}" Aspect="Fill" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand"/>
+                        <Image Source="overlayCol.png" Aspect="Fill" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand"/>
+                        <StackLayout Margin="30" VerticalOptions="EndAndExpand">
+                            <Label Text="{Binding Title}" TextColor="White" FontSize="35"/>
+                            <Label Text="{Binding Caption}" TextColor="White" FontSize="15"/>
+                        </StackLayout>
+                    </Grid>
+                </DataTemplate>
+            </BindableLayout.ItemTemplate>
+        </ScrollView>
+    </ContentView>
+</ContentPage>

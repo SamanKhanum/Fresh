@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Fresh.Pages.MyAccountPage">
+    <ContentPage.Content>
+        <StackLayout Orientation="Vertical" Margin="10">
+            <StackLayout Orientation="Horizontal" BackgroundColor="LightCoral">
+            <Grid>
+                <Image Source="UserIcon" Grid.Column="1" VerticalOptions="StartAndExpand" HorizontalOptions="StartAndExpand" Margin="10" HeightRequest="50" WidthRequest="50"/>
+                <Label Text="User Name" Grid.Column="2" Grid.Row="1" TextColor="DarkSlateGray" FontSize="20" VerticalTextAlignment="Center" FontAttributes="Bold"/>
+                <Label Text="Email Address" Grid.Column="2" Grid.Row="2" TextColor="DarkSlateGray" FontSize="20" VerticalTextAlignment="Center" />
+                <Label Text="Phone Number" Grid.Column="2" Grid.Row="3" TextColor="DarkSlateGray" FontSize="20" VerticalTextAlignment="Center" />
+                <Image Source="Edit" HorizontalOptions="EndAndExpand" Grid.Column="3" Grid.Row="1" HeightRequest="2" WidthRequest="2"/>
+                </Grid>
+           </StackLayout>
+            <StackLayout Orientation="Horizontal">
+                <Frame BackgroundColor="White" HeightRequest="20" WidthRequest="100" Margin="5">
+                    <Image Source="Location" HeightRequest="5" WidthRequest="5" HorizontalOptions="StartAndExpand" Margin="2"/>
+  </Frame>
+            </StackLayout>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
