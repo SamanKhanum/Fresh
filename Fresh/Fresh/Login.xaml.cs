@@ -16,6 +16,7 @@ namespace Fresh
         }
         private void btn_Clicked(object sender, EventArgs e)
         {
+            //App.Current.MainPage.Navigation.PushAsync(new ShellHome());
 
             App.Current.MainPage = new ShellHome();
         }

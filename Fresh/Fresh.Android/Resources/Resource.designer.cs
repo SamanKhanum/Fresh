@@ -18801,6 +18801,9 @@ namespace Fresh.Droid
 			// aapt resource value: 0x7F070079
 			public const int design_ic_visibility = 2131165305;
 			
+			// aapt resource value: 0x7F07007F
+			public const int icon = 2131165311;
+			
 			// aapt resource value: 0x7F07007A
 			public const int design_ic_visibility_off = 2131165306;
 			
@@ -18881,6 +18884,9 @@ namespace Fresh.Droid
 			
 			// aapt resource value: 0x7F070093
 			public const int ic_mtrl_chip_close_circle = 2131165331;
+			
+			// aapt resource value: 0x7F070094
+			public const int navigation_empty_icon = 2131165332;
 			
 			// aapt resource value: 0x7F070095
 			public const int JustAPotato = 2131165333;

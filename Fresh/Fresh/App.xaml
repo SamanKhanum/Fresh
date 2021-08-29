@@ -9,7 +9,7 @@
                 <Setter Property="Shell.TabBarBackgroundColor" Value="White"/>
                 <Setter Property="Shell.TabBarTitleColor" Value="#6BADCE"/>
 
-            </Style>
+        </Style>
         </ResourceDictionary>
     </Application.Resources>
 </Application>

@@ -33,12 +33,19 @@
 
     </FlyoutItem>
 
+    <ShellContent Title="About"
+                  Icon="fav"
+                  ContentTemplate="{DataTemplate Pages:MyAccountPage}"/>
 
     <Shell.FlyoutFooter>
         <Controls:FooterContentView/>
     </Shell.FlyoutFooter>
 
 </Shell>
+<!--<ContentPage>
+        <SearchBar HorizontalOptions="CenterAndExpand" VerticalOptions="StartAndExpand" Text="Search . . ." 
+                   BackgroundColor="Black" TextColor="White" />
+    </ContentPage>-->
 
    
   

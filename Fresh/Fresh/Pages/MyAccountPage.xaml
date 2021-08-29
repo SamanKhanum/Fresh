@@ -16,9 +16,12 @@
                                 <Label Text=">   PhoneNumber" TextColor="White" FontSize="17" />
                                 <Label Text=">   User Adress" TextColor="White" FontSize="17" />
                             </StackLayout>
-                        </StackLayout>
-                    </Frame>
-                </StackLayout>
+           </StackLayout>
+            <StackLayout Orientation="Horizontal">
+                <Frame BackgroundColor="White" HeightRequest="20" WidthRequest="100" Margin="5">
+                    <Image Source="Location" HeightRequest="5" WidthRequest="5" HorizontalOptions="StartAndExpand" Margin="2"/>
+  </Frame>
+            </StackLayout>
 
                 <ScrollView VerticalOptions="CenterAndExpand">
                     <StackLayout Orientation="Vertical" Spacing="8">
@@ -44,7 +47,7 @@
                         <StackLayout Orientation="Horizontal" Margin="5">
                             <Image Source="MenuIcon" Aspect="AspectFit"  HeightRequest="35" Opacity="0.4" HorizontalOptions="StartAndExpand" VerticalOptions="CenterAndExpand"/>
                             <Label Text="My Coupons" TextColor="Gray" FontSize="18"  VerticalOptions="CenterAndExpand" HorizontalOptions="StartAndExpand" FontAttributes="Bold"/>
-                        </StackLayout>
+        </StackLayout>
                         <BoxView BackgroundColor="LightGray" Opacity="0.2" HeightRequest="2" WidthRequest="200" />
 
                         <StackLayout Orientation="Horizontal" Margin="5">

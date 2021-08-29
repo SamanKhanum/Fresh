@@ -13,19 +13,20 @@
                 <Label Text="Explore Products" Margin="5" TextColor="DarkSlateGray" FontSize="20"/>
                 <ScrollView Orientation="Horizontal" Grid.Row="1" VerticalOptions="Start" VerticalScrollBarVisibility="Never" HorizontalScrollBarVisibility="Never">
                     <StackLayout BindableLayout.ItemsSource="{Binding Explore}" Orientation="Horizontal" Spacing="20" VerticalOptions="Start">
-                        <BindableLayout.ItemTemplate>
-                            <DataTemplate>
+            <BindableLayout.ItemTemplate>
+                <DataTemplate>
                                 <StackLayout VerticalOptions="Start">
                                     <Frame Padding="0" HasShadow="False"  HorizontalOptions="Start" VerticalOptions="Start" CornerRadius="10" HeightRequest="100" WidthRequest="100">
                                         <Image Source="{Binding Image}" Aspect="AspectFit" HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand"/>
                                     </Frame>
                                     <Label Text="{Binding Name}" TextColor="Black" FontSize="15" />
                                     <Label Text="{Binding Price}" Margin="0,-7,0,0" TextColor="#62153B" FontSize="12"/>
-                                </StackLayout>
-                            </DataTemplate>
-                        </BindableLayout.ItemTemplate>
+                        </StackLayout>
+                    </Grid>
+                </DataTemplate>
+            </BindableLayout.ItemTemplate>
                     </StackLayout>
-                </ScrollView>
+        </ScrollView>
             </Grid>
 
             <BoxView BackgroundColor="AliceBlue" HeightRequest="1" WidthRequest="200"/>

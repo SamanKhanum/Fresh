@@ -84,21 +84,27 @@
                     <Image Source="Pets" HorizontalOptions="StartAndExpand" VerticalOptions="CenterAndExpand" HeightRequest="30" WidthRequest="30"/>
                     <Label Text="Pets" TextColor="Gray" FontSize="15" VerticalTextAlignment="Center" HorizontalOptions="CenterAndExpand" FontAttributes="Bold"/>
                     <Image Source="arrow" VerticalOptions="CenterAndExpand" HorizontalOptions="EndAndExpand" HeightRequest="20" WidthRequest="20"/>
-                </StackLayout>
+                 </StackLayout>
 
                 <StackLayout>
                     <BoxView BackgroundColor="Gray" HeightRequest="1"/>
-                </StackLayout>
+                                    </StackLayout>
                 <StackLayout Orientation="Horizontal">
                     <Image Source="Garden" HorizontalOptions="StartAndExpand" VerticalOptions="CenterAndExpand" HeightRequest="30" WidthRequest="30"/>
                     <Label Text="Garden" TextColor="Gray" FontSize="15" VerticalTextAlignment="Center" HorizontalOptions="CenterAndExpand" FontAttributes="Bold"/>
                     <Image Source="arrow" VerticalOptions="CenterAndExpand" HorizontalOptions="EndAndExpand" HeightRequest="20" WidthRequest="20"/>
-                </StackLayout>
+                                            </StackLayout>
                 <StackLayout>
                     <BoxView BackgroundColor="Transparent" HeightRequest="1"/>
-                </StackLayout>
-            </StackLayout>
-        </ScrollView>
+                                        </StackLayout>
+                                    </StackLayout>
+                                </DataTemplate>
+                            </BindableLayout.ItemTemplate>
+                        </ScrollView>
+                    </Grid>
+                </Grid>
+            </ScrollView>
+        </Grid>
     </ContentPage.Content>
    
 </ContentPage>
